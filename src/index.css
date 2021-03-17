@@ -11,3 +11,129 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+.HEADER{
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  border-right: 5px solid gray;
+  border-bottom: 5px solid gray;
+  border-radius: 2px;
+}
+img{
+  max-width: 100%;
+}
+.bottom{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  font-size: 3.5rem;
+}
+ 
+.para{
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  border:2px solid rgb(255, 81, 0);
+  border-radius: 3px;
+  background-color:  rgb(255, 81, 0);
+  padding: 5px;
+  cursor: pointer;
+  
+}
+.IMDB{
+  color:rgb(160, 1, 1);
+}
+.footer{
+  text-align: center;
+}
+.link{
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .wrapper{
+     grid-template-columns: 1fr;
+     border: none;
+   }
+   .social{
+     padding: 10px;
+     margin: 10px;
+   }
+   .bottom{
+     min-height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content:space-between;
+   }
+   .Para{
+     font-size: 1.3rem;
+   }
+   .btn{
+     padding: 3px;
+   }
+
+}
+@media only screen and (max-width: 500px) {
+  .header{
+    font-size: 2rem;
+  }
+  .social{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .para{
+    font-size: .9rem;
+  }
+  .Para{
+    font-weight: bold;
+  }
+  .bottom{
+    min-height: 150px;
+  }
+  .social{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .header{
+    font-size: 1.5rem;
+  }
+  .social{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .para{
+    font-size: .7rem;
+  }
+  .Para{
+    font-weight: bold;
+  }
+  .social{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
